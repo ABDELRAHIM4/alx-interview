@@ -4,6 +4,8 @@
 
 def pascal_triangle(n):
     """returns a list of lists of integers"""
+    if (n <= 0):
+        return ([])
     ang = [[1]]
     for u in range(n - 1):
         num = [1]
