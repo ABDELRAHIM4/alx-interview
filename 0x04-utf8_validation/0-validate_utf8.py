@@ -22,4 +22,4 @@ def validUTF8(data):
             if binary[:2] == '10':
                 return (False)
             num -= 1
-    return (num == 0 )
+    return (num == 0)
