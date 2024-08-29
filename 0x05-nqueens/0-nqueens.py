@@ -20,7 +20,7 @@ def solve(n, row, s):
         return
     for col in range(n):
         if safe(s ,row, col):
-            n[row] = col
+            s[row] = col
             solve(n, row + 1, s)
 
 def main():
@@ -36,7 +36,7 @@ def main():
     if n < 4:
         print("N must be at least 4")
         exit(1)
-
+    solve(n, 0, [None] * n)
 
 if __name__ == "__main__":
     main()
