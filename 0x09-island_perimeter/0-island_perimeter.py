@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-
-
 """returns the perimeter of the island described in grid"""
+
+
 def island_perimeter(grid):
     """returns the perimeter of the island described in grid"""
     count = 0
@@ -16,8 +16,6 @@ def island_perimeter(grid):
                                 count += 1         
                             if j == 0 or grid[i + 1][j] == 0:
                                 count += 1
-                            if j == col - 1 or grid[i][j + 1] == 0:
-                            
+                            if j == col - 1 or grid[i][j + 1] == 0: 
                                 count += 1
-                                
     return (count)
